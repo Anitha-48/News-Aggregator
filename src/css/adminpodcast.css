@@ -1,0 +1,179 @@
+/* ================= MAIN LAYOUT ================= */
+.admin-dashboard1 {
+  display: flex;
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f7fb;
+  min-height: 100vh;
+  color: #111827;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar1 {
+  width: 240px;
+  background: #ffffff;
+  color: #111827;
+  padding: 20px;
+  border-right: 1px solid #e5e7eb;
+}
+
+.sidebar1 ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.sidebar1 li {
+  padding: 10px 12px;
+  margin: 6px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+.sidebar1 li:hover {
+  background: #f3f4f6;
+}
+
+.sidebar1 .active {
+  background: #e0e7ff;
+  color: #2563eb;
+}
+
+/* ================= MAIN AREA ================= */
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* ================= TOPBAR ================= */
+.topbar1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ================= AVATAR ================= */
+.avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* ================= FORM CARD (CLEAN & SMALL) ================= */
+.form-card1 {
+  background: #ffffff;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  max-width: 650px;
+  margin-top: 15px;
+}
+
+/* INPUTS */
+.form-card1 input,
+.form-card1 textarea,
+.form-card1 select {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 6px 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-card1 input:focus,
+.form-card1 textarea:focus,
+.form-card1 select:focus {
+  border-color: #2563eb;
+}
+
+/* TEXTAREA */
+.form-card1 textarea {
+  min-height: 80px;
+  resize: none;
+}
+
+/* ================= BUTTONS (SMALL & CLEAN) ================= */
+.btn1 {
+  background: #2563eb;
+  color: white;
+  padding: 7px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.2s;
+  margin-top: 8px;
+}
+
+.btn1:hover {
+  background: #1d4ed8;
+}
+
+.cancel-btn1 {
+  background: #ef4444;
+}
+
+/* ================= GRID ================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* ================= CARD ================= */
+.card {
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* ACTION BUTTONS */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 8px;
+}
+
+.actions button {
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.actions .edit {
+  background: #f59e0b;
+  color: white;
+}
+
+.actions .delete {
+  background: #ef4444;
+  color: white;
+}

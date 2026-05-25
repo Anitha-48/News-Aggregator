@@ -1,0 +1,468 @@
+/* =========================
+   ANALYTICS PAGE
+========================= */
+
+.analytics-container{
+
+    padding:30px;
+
+    background:#f1f5f9;
+
+    min-height:100vh;
+
+    width:100%;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.analytics-container h1{
+
+    margin-bottom:30px;
+
+    color:#0f172a;
+
+    font-size:34px;
+
+    font-weight:700;
+}
+
+/* =========================
+   ANALYTICS CARDS
+========================= */
+
+.analytics-cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+
+    margin-bottom:40px;
+}
+
+.card{
+
+    background:white;
+
+    padding:28px;
+
+    border-radius:24px;
+
+    box-shadow:
+    0 10px 30px rgba(15,23,42,0.08);
+
+    transition:0.3s;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:linear-gradient(
+      90deg,
+      #2563eb,
+      #06b6d4
+    );
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 18px 40px rgba(15,23,42,0.14);
+}
+
+.card h2{
+
+    font-size:20px;
+
+    margin-bottom:14px;
+
+    color:#334155;
+
+    font-weight:600;
+}
+
+.card p{
+
+    font-size:38px;
+
+    font-weight:700;
+
+    color:#2563eb;
+}
+
+/* =========================
+   CHART BOX
+========================= */
+
+.chart-box{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:24px;
+
+    margin-bottom:40px;
+
+    box-shadow:
+    0 10px 30px rgba(15,23,42,0.08);
+
+    overflow-x:auto;
+}
+
+/* =========================
+   RECENT NEWS
+========================= */
+
+.recent-news{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:24px;
+
+    box-shadow:
+    0 10px 30px rgba(15,23,42,0.08);
+}
+
+.recent-news h2{
+
+    margin-bottom:20px;
+
+    color:#0f172a;
+
+    font-size:26px;
+}
+
+.recent-card{
+
+    border-bottom:1px solid #e2e8f0;
+
+    padding:18px 0;
+
+    transition:0.3s;
+}
+
+.recent-card:last-child{
+
+    border-bottom:none;
+}
+
+.recent-card:hover{
+
+    transform:translateX(5px);
+}
+
+.recent-card h3{
+
+    color:#111827;
+
+    font-size:18px;
+
+    margin-bottom:8px;
+
+    line-height:1.5;
+}
+
+.recent-card p{
+
+    color:#64748b;
+
+    font-size:15px;
+
+    line-height:1.7;
+}
+
+/* =========================
+   QUICK ACTIONS
+========================= */
+
+.quick-actions{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(240px,1fr));
+
+    gap:25px;
+
+    margin:35px 0;
+}
+
+.action-card{
+
+    background:white;
+
+    padding:28px;
+
+    border-radius:24px;
+
+    cursor:pointer;
+
+    transition:0.35s;
+
+    box-shadow:
+    0 10px 30px rgba(15,23,42,0.08);
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.action-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:linear-gradient(
+      90deg,
+      #2563eb,
+      #0ea5e9
+    );
+}
+
+.action-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 20px 40px rgba(15,23,42,0.16);
+}
+
+.action-card h3{
+
+    margin-top:18px;
+
+    font-size:22px;
+
+    color:#0f172a;
+
+    font-weight:600;
+}
+
+.action-card p{
+
+    color:#64748b;
+
+    margin-top:10px;
+
+    font-size:15px;
+
+    line-height:1.6;
+}
+
+.action-icon{
+
+    font-size:44px;
+
+    color:#2563eb;
+}
+
+/* =========================
+   TABLET RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+    .analytics-container{
+
+        padding:24px;
+    }
+
+    .analytics-container h1{
+
+        font-size:30px;
+    }
+
+    .card{
+
+        padding:24px;
+    }
+
+    .card p{
+
+        font-size:32px;
+    }
+
+    .chart-box,
+    .recent-news{
+
+        padding:24px;
+    }
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .analytics-container{
+
+        padding:18px;
+    }
+
+    .analytics-container h1{
+
+        font-size:26px;
+
+        margin-bottom:24px;
+    }
+
+    .analytics-cards{
+
+        gap:18px;
+    }
+
+    .card{
+
+        border-radius:20px;
+
+        padding:22px;
+    }
+
+    .card h2{
+
+        font-size:18px;
+    }
+
+    .card p{
+
+        font-size:28px;
+    }
+
+    .quick-actions{
+
+        gap:18px;
+    }
+
+    .action-card{
+
+        padding:22px;
+
+        border-radius:20px;
+    }
+
+    .action-card h3{
+
+        font-size:20px;
+    }
+
+    .action-card p{
+
+        font-size:14px;
+    }
+
+    .action-icon{
+
+        font-size:38px;
+    }
+
+    .chart-box{
+
+        padding:20px;
+
+        border-radius:20px;
+    }
+
+    .recent-news{
+
+        padding:20px;
+
+        border-radius:20px;
+    }
+
+    .recent-news h2{
+
+        font-size:22px;
+    }
+
+    .recent-card h3{
+
+        font-size:16px;
+    }
+
+    .recent-card p{
+
+        font-size:14px;
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media(max-width:480px){
+
+    .analytics-container{
+
+        padding:14px;
+    }
+
+    .analytics-container h1{
+
+        font-size:22px;
+    }
+
+    .analytics-cards{
+
+        grid-template-columns:1fr;
+    }
+
+    .quick-actions{
+
+        grid-template-columns:1fr;
+    }
+
+    .card{
+
+        padding:20px;
+    }
+
+    .card p{
+
+        font-size:24px;
+    }
+
+    .action-card{
+
+        padding:20px;
+    }
+
+    .chart-box,
+    .recent-news{
+
+        padding:18px;
+    }
+}
