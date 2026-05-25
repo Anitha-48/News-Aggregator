@@ -1,21 +1,174 @@
-<<<<<<< HEAD
-# React + Vite
+# 📰 NewsHub - News Aggregator Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+NewsHub is a modern full-stack News Aggregator web application built using React.js and Django REST Framework.  
+Users can explore trending news, save articles, listen to podcasts, and browse categorized news with a clean responsive UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# 🚀 Features
 
-## React Compiler
+## 👤 User Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Latest Trending News
+- Category Based News
+- Search Functionality
+- Save / Bookmark News
+- Podcast Section
+- Responsive Mobile UI
+- Authentication System
+- Smooth Scrolling Landing Page
+- Contact Section
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# News-Aggregator
-NewsHub is a modern and responsive news web application built using React.js and Django REST Framework. The platform provides users with the latest trending news, podcast streaming, category-based news browsing, and an admin dashboard for podcast management.
->>>>>>> 0f617d758a6b977c04ef3b84482904977d9059ad
+## 🛠️ Admin Features
+
+- Admin Dashboard
+- Create News
+- Edit News
+- Delete News
+- Analytics Section
+- User Management
+- Trending Management
+- Podcast Management
+- Responsive Sidebar Navigation
+
+---
+
+# 🧑‍💻 Tech Stack
+
+## Frontend
+- React JS
+- React Router DOM
+- Axios
+- React Toastify
+- CSS3
+
+## Backend
+- Django
+- Django REST Framework
+- SQLite
+
+---
+
+# 📂 Project Structure
+
+```bash
+frontend/
+backend/
+```
+
+---
+
+# ⚙️ Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/Anitha-48/News-Aggregator.git
+```
+
+---
+
+# Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm start
+```
+
+---
+
+# Backend Setup
+
+```bash
+cd backend
+pip install -r requirements.txt
+python manage.py runserver
+```
+
+---
+
+# 🔐 Authentication
+
+- Login System
+- Register System
+- JWT Authentication
+
+---
+
+# 📱 Responsive Design
+
+- Mobile Responsive
+- Tablet Responsive
+- Desktop Responsive
+
+---
+
+# ✨ UI Features
+
+- Modern Dashboard UI
+- Glassmorphism Effects
+- Animated Trending Cards
+- Smooth Hover Effects
+- Sidebar Toggle for Mobile
+- Gradient Theme
+
+---
+
+# 📸 Screenshots
+
+## Home Page
+- Hero Section
+- Trending News
+- Categories
+- Contact Section
+
+## Dashboard
+- News Grid
+- Save Feature
+- Search Functionality
+
+## Admin Panel
+- Analytics
+- CRUD Operations
+- Sidebar Navigation
+
+---
+
+# 🌐 Deployment
+
+## Frontend
+Deploy using:
+
+- Vercel
+
+## Backend
+Deploy using:
+
+- Render
+- Railway
+
+---
+
+# 📌 Future Improvements
+
+- AI News Recommendation
+- Live News API
+- Dark Mode
+- Notifications
+- Comments System
+- Multi Language Support
+
+---
+
+# 👩‍💻 Author
+
+Developed by Anitha
+
+---
+
+# ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub.
